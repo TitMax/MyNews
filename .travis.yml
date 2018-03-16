@@ -1,5 +1,4 @@
 language: android
-jdk: oraclejdk8
 
 before_cache:
     - rm -f $HOME/.gradle/caches/modules-2/modules-2.lock
@@ -28,7 +27,6 @@ android:
     - sys-img-armeabi-v7a-android-$EMULATOR_API_LEVEL
     - extra-google-m2repository
     - extra-android-m2repository # for design library
-    - addon-google_apis-google-19 # google play services
     
 before_install:
     - chmod +x gradlew
@@ -41,4 +39,4 @@ before_script:
     - adb shell input keyevent 82 &
     
 script:
-    - "./gradlew clean build connectedCheck -PdisablePreDex --stacktrace"
+    - ./gradlew connectedAndroidTest
