@@ -1,2 +1,2 @@
 # MyNews
-![Travis-ci](https://api.travis-ci.org/TitMax/MyNews.svg)
+[![Build Status](https://travis-ci.org/TitMax/MyNews.svg?branch=master)](https://travis-ci.org/TitMax/MyNews)
